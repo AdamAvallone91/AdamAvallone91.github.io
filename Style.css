@@ -1,0 +1,173 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    flex:auto;
+    margin: auto;
+    left: 0px;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+button {
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    display: flex;
+    height:10vh;
+    width:90%;
+    margin:auto;
+    align-items: center;
+    color: white;
+}
+
+
+
+.logo-container,.nav-links,.logo {
+display: flex;
+}
+
+
+.logo-container {
+    position: relative;
+    z-index: 1;
+    margin: 20px 0px 0px;
+    flex:1;
+    width:201px;
+    margin-top:18px;
+    margin-left:0px;
+}
+.nav-links {
+    flex:3;
+}
+
+.nav-links {
+    justify-content:space-around;
+    list-style:none;
+}
+
+.nav-link{
+    color: white;
+    font-size:18px;
+    text-decoration:none;
+}
+
+.nav-link{
+    justify-content: flex-end;
+}
+
+.presentation{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    min-height: 80vh;
+    align-items: center;
+}
+
+.introduction{
+    flex:1;
+}
+
+.intro-text h1 {
+    color: white;
+    margin-right: auto;
+    margin-left: auto;
+    float: none;
+    font-size: 50px;
+    font-weight: 800;
+    background: linear-gradient(to center, #494964, #6f6f89);
+    align-items: center;
+    text-align: center;
+}
+
+.intro-text p{
+    font-size: 22px;
+    color:white;
+    align-items: center;
+}
+
+.paragraph{
+    align-items: center;
+    max-width: 560px;
+    margin-right: auto;
+    margin-left: auto;
+    float: none;
+    text-align:center;
+    margin:205px 159px 20px 150px;
+}
+
+.cta{
+    padding: 0px 50px 0px 20px;
+
+}
+
+.cta-select{
+    border: 2px solid white;
+    background: transparent;
+    color: white;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 16px;
+
+}
+
+.cta-add{
+    background: #c36cbb;
+    border: none;
+    color:white;
+    margin: 30px 0px 0px 30px
+}
+
+.div-block-centered {
+    flex:1;
+    width: 100%;
+    display: inline-block;
+}
+
+
+.div-block-centered {
+    height: 27vh;
+    filter: drop-shadow(0px 5px 3px black);
+    animation: drop 1.5s ease;
+    margin: -405px 759px 200px 0px;
+}
+
+.violet-gradient{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: -1;
+    opacity: 50;
+}
+
+@keyframes drop {
+    0% {
+        opacity: 0;
+        transform: translate(-80px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0px);
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .presentation {
+        flex-direction: column;
+    }
+    .introduction {
+        margin-top: 5vh;
+        text-align: center;
+    }
+}
+
+.paragraph {
+    bottom:  5%;
+    right: 125%;
+    width: 125%;
+    transform: translate(125%, 5%);
+}
